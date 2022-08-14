@@ -10,14 +10,14 @@ public class Armstrong {
         int sum = 0;
         for (int i = u; i >= l; i--) {
             int temp =i;
-            while (i > 0) {
-                int a = i % 10;
+            while (temp > 0) {
+                int a = temp % 10;
                 int b = (int) Math.pow(a, 3);
                 sum += b;
-                i = i / 10;
+                temp = temp / 10;
             }
-            if (temp == sum) {
-                System.out.println(temp);
+            if (i == sum) {
+                System.out.println(i);
             }
 
         }
