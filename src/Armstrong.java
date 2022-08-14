@@ -9,15 +9,15 @@ public class Armstrong {
         int u = input.nextInt();
         int sum = 0;
         for (int i = u; i >= l; i--) {
+            int temp =i;
             while (i > 0) {
                 int a = i % 10;
                 int b = (int) Math.pow(a, 3);
                 sum += b;
                 i = i / 10;
-
-                }
-            if (sum == i) {
-                System.out.println(i);
+            }
+            if (temp == sum) {
+                System.out.println(temp);
             }
 
         }
