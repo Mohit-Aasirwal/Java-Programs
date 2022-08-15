@@ -5,7 +5,7 @@ public class Prime_number_method {
         Scanner scan = new Scanner(System.in);
         System.out.println("enter a number to find it is prime or not: ");
         int a = scan.nextInt();
-       if( isprime(a)==true){
+       if(isprime(a)){
            System.out.println("Prime Number");
        }
        else
@@ -15,13 +15,12 @@ public class Prime_number_method {
     }
 
     static boolean isprime(int a) {
-        for(int i = 2 ; i<a ;i++){
-            if(a%i==0){
+        for (int i = 2; i < a; i++) {
+            if (a % i == 0)
                 return false;
-            }
-            else
-                return true;
         }
-    return true;
+
+        return true;
+
     }
 }
