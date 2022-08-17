@@ -1,22 +1,25 @@
 import java.util.Scanner;
 
 public class Number_Palindrome {
+
+    static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number: ");
         int num = scan.nextInt();
         palindrome(num);
     }
 
     static void palindrome(int num) {
+
          int temp = num;
-         int sum =0;
-        while(temp>0){
-            for(int i =0;i<num;i++)
-            {int a = temp%10;
-        sum+=a*(Math.pow(10,i));
-        temp = temp/10;}
-    }
-        if(sum == num){
+         int rev =0;
+         int a;
+        while(temp > 0){
+             a = temp % 10;
+            rev = (int) ((rev *10) +a);
+             temp=temp/10;
+        }
+        if(rev == num){
             System.out.println("Number is Palindrome.");
         }
         else {
