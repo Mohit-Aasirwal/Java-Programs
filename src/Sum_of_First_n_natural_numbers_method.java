@@ -8,7 +8,7 @@ public class Sum_of_First_n_natural_numbers_method {
         int sum1 = 0;
         while (n != 0) {
             n = scan.nextInt();
-            sum1 = sum(n);
+            sum1 += sum(n);
         }
         System.out.println("Sum to the numbers are: " + sum1);
     }
