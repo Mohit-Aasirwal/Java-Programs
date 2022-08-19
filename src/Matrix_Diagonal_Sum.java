@@ -22,3 +22,22 @@ public class Matrix_Diagonal_Sum {
         }
     }
 }
+
+//class Solution {
+//    public int diagonalSum(int[][] mat) {
+//        int sum =0;
+//        for(int i =0; i<mat.length; i++){
+//            for (int j=0; j<mat[i].length;j++){
+//                if(i==j || j==mat[i].length-i ){
+//                    if(j==mat[i].length-i && i==j){
+//                        continue;
+//                    }
+//                    else
+//                        sum+=mat[i][j];
+//                }
+//            }
+//        }
+//        return (sum);
+//
+//    }
+//}
