@@ -4,6 +4,9 @@ public class Students {
     String name;
     String branch;
     int rollno;
+    Students(){
+        this ("Anonymous","Not known", 0);
+    }
     Students(String name, String branch, int rollno){
         this.name= name;
         this.branch= branch;
@@ -13,7 +16,7 @@ public class Students {
     public static void main(String[] args) {
         Students s = new Students("Mohit Aasirwal","Information Technology",39);
         System.out.println(s.name+' '+s.branch+" "+s.rollno);
-
+        Students p = new Students();
     }
 
 }
